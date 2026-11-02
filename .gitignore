@@ -1,0 +1,7 @@
+out/
+cache/
+target/
+*.wtns
+*.zkey
+node_modules/
+.DS_Store

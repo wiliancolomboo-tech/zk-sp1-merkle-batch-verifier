@@ -1,0 +1,42 @@
+{
+  "bounty_id": "sp1-merkle-batch-verifier",
+  "bounty_title": "SP1 ZK-Coprocessor: High-Throughput Merkle Batch Verifier",
+  "slug": "zk-sp1-merkle-batch-verifier",
+  "platform": "DoraHacks",
+  "track": "ZK Coprocessor, SP1 & High-Throughput Rollup Settlement",
+  "prize_amount": 4500.0,
+  "prize_currency": "USDC",
+  "payout_wallet_evm": "0x5f15e51dff8dc59116d8f399c136004f6cecbbbe",
+  "submission_fields": {
+    "project_name": "SP1 ZK-Coprocessor: High-Throughput Merkle Batch Verifier",
+    "repository_url": "https://github.com/wiliancolomboo-tech/zk-sp1-merkle-batch-verifier",
+    "technical_dossier_path": "README.md",
+    "contracts": {
+      "groth16_verifier": "contracts/Groth16Verifier.sol"
+    },
+    "zk_circuit": {
+      "merkle_batch_circuit": "circuits/BatchMerkleVerifier1024.circom"
+    },
+    "prover_engine": {
+      "cli_harness": "prover/src/main.rs",
+      "test_suite": "test/Groth16Verifier.t.sol"
+    },
+    "core_capabilities": [
+      "Sub-50k gas EVM settlement for 1,024 withdrawal leaves via Schwartz-Zippel Horner accumulation",
+      "Two-tier amortized Merkle accumulator with Fiat-Shamir polynomial commitment",
+      "Strict R1CS constraint budget (<3,940 constraints, 39.4% of maximum ceiling)",
+      "Zero-knowledge completeness and knowledge soundness proof matrix in AGM model",
+      "Foundry unit tests with Cancun EVM pairing precompile verification"
+    ]
+  },
+  "status": "READY_FOR_SUBMISSION",
+  "created_at": "2026-11-02T20:35:00Z",
+  "expected_payout": "4,500 USDC",
+  "payout_route": {
+    "network": "Arbitrum / Polygon / Ethereum L1",
+    "asset": "USDC",
+    "destination": "0x5f15e51dff8dc59116d8f399c136004f6cecbbbe",
+    "auto_conversion_target": "USDT",
+    "mexc_deposit_network": "Plasma (Zero Fee)"
+  }
+}
